@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="m.mark.GuiWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none">
+      <font/>
+      <title-color color="-4473925"/>
+    </border>
+    <children>
+      <grid id="40c50" binding="inputPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="etched" title="Search by Postcode:" title-justification="1" title-position="2"/>
+        <children>
+          <component id="1fc66" class="javax.swing.JTextField" binding="postcodeInput">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Enter the postcode to search for here"/>
+            </properties>
+          </component>
+          <component id="86b60" class="javax.swing.JButton" binding="confirmButton">
+            <constraints border-constraint="East"/>
+            <properties>
+              <text value="Search"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="2d9f4" binding="outputScrollPane">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="etched" title="Search Results:"/>
+        <children>
+          <component id="745c3" class="javax.swing.JTextArea" binding="outputField">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <rows value="15"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor" id="b99ec"/>
+  </inspectionSuppressions>
+</form>
